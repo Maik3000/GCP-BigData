@@ -97,9 +97,13 @@ gcloud dataproc jobs submit pyspark     --cluster=mi-cluster-spark     --region=
 - Cálculo de valor total (`TOTAL_ORDER_VALUE`).  
 - Clasificación por tamaño de venta (`DEAL_CATEGORY`).  
 
+### **2.1. Procesar con Cloud Data Fusion**  
+- Se creó una pipeline ETL 
+- Se realizaron modificaciones y transformaciones en el Wrangler incorporado
+- Ver la Pipeline en *cloud-data-fusion-pipeline*
 ---
 
-## **📊 Resultados en BigQuery**  
+## **3 Resultados en BigQuery**  
 Consulta de prueba:  
 ```sql
 SELECT * FROM `bigdata-batch-demo.autodataset.sales_processed` LIMIT 10;
@@ -107,6 +111,11 @@ SELECT * FROM `bigdata-batch-demo.autodataset.sales_processed` LIMIT 10;
 - **Particionamiento**: Por `ORDERDATE`.  
 - **Clustering**: Por `DEAL_CATEGORY`.  
 - **Consultas**: Usando SQL estándar (SELECT, JOIN, GROUP BY, etc.).  
+
+## **4 Visualizacion en Looker Studio Pro**
+- Se importaron los datos almacenados en BigQuery
+- Se creó un reporte con graficas y visualizaciones
+
 
 
 **🔗 Más recursos**:  
