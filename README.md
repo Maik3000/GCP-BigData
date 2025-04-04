@@ -72,8 +72,8 @@ gcloud dataproc jobs submit pyspark     --cluster=mi-cluster-spark     --region=
 | Archivo | Descripción |  
 |---------|-------------|  
 | [`clean_data_fusion.py`](./clean_data_fusion.py) | Limpieza inicial del dataset (local). Soluciona un problema en Data Fusion con delimitadores de coma. |  
-| [`Load-GCS.py`](./Load-GCS.py) | Sube datos a Cloud Storage. |  
-| [`data_processing-dataproc.py`](./data_processing-dataproc.py) | Script PySpark usado en Dataproc. |  
+| [`Load-GCS.py`](./Load-GCS.py) | Establece conexión y carga de datos a Cloud Storage. |  
+| [`data_processing-dataproc.py`](./data_processing-dataproc.py) | Script PySpark usado en Dataproc con conexión a BigQuery. |  
 
 ---
 
